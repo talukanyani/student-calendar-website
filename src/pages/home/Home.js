@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Navbar from '../../components/Navbar'
 
 export default function HomePage() {
     useEffect(() => {
@@ -6,6 +7,9 @@ export default function HomePage() {
     })
 
     return (
-        <h1>Home Page</h1>
+        <>
+            <Navbar />
+            <h1>Home Page</h1>
+        </>
     )
 }
