@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Navbar from '../../components/Navbar'
 import Header from './components/Header'
+import Features from './components/Features'
 
 export default function HomePage() {
     useEffect(() => {
@@ -11,6 +12,7 @@ export default function HomePage() {
         <>
             <Navbar />
             <Header />
+            <Features />
         </>
     )
 }

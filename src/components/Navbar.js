@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css'
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg'
 import menu_icon from '../assets/icons/menu.svg'
 import close_icon from '../assets/icons/close.svg'
@@ -71,9 +72,12 @@ function Navigations({ onNavClick = () => { } }) {
         <nav className={styles.navigations}>
             <ul>
                 <li>
-                    <a href='/#header' onClick={onNavClick}>
+                    <Link to='/' onClick={() => {
+                        onNavClick()
+                        window.scrollTo(0, 0)
+                    }}>
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <a href='/#features' onClick={onNavClick}>

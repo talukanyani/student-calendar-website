@@ -4,9 +4,11 @@ import app_store_img from '../../../assets/images/app_store.svg'
 
 export default function Header() {
     return (
-        <header id='header' className={styles.header}>
+        <header className={styles.header}>
             <div>
-                <h1>Student Calendar</h1>
+                <h1 className='small_heading'>
+                    Student Calendar
+                </h1>
                 <h2>
                     Stay Organised and on Track.
                     Manage your Academic Assessments.

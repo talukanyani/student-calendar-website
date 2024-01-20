@@ -25,6 +25,7 @@
   --palm-leaf-green-dark: #264F0A;
   --palm-leaf-green-light: #BCCF9A;
 
+  --white255-a75: rgba(255, 255, 255, 0.75);
   --white235-a50: rgba(235, 235, 235, 0.5);
 }
 
@@ -47,6 +48,7 @@
   --tertiary-color: var(--palm-leaf-green);
   --tertiary-container-color: var(--palm-leaf-green-light);
 
+  --background-color1-a75: var(--white255-a75);
   --modal-barrier-color: var(--white235-a50);
 }
 
@@ -73,6 +75,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--foreground-color2);
   background-color: var(--background-color1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.small_heading {
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin: 0;
 }
 
 .icon_btn {
