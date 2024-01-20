@@ -1,0 +1,79 @@
+.header {
+    max-width: 1280px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.header>div {
+    padding: 8rem 2rem;
+    border-radius: 1rem;
+    background: url(../../../assets/images/student_room.png),
+        var(--background-color2);
+    background-size: 40rem 22.5rem;
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 720px;
+    margin-top: 0.5rem;
+}
+
+.download_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.download_btns button {
+    border: none;
+    padding: 0;
+    width: 8rem;
+    aspect-ratio: 45/13;
+    border-radius: 0.5rem;
+    background-color: var(--grey2);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.download_btns button:active {
+    scale: 0.95;
+}
+
+.download_btns button img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 1080px) {
+    .header>div {
+        padding-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header>div {
+        padding-bottom: 4rem;
+        background-size: 28rem 15.75rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header h2 {
+        font-size: 2rem;
+    }
+}
