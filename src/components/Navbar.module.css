@@ -1,5 +1,6 @@
 :root {
     --navbar-height: 5rem;
+    --navbar-vert-sides-padding: 2vw;
 }
 
 .navbar_placeholder {
@@ -13,7 +14,7 @@
     right: 0;
     z-index: 10;
     height: var(--navbar-height);
-    padding: 0 2vw;
+    padding: 0 var(--navbar-vert-sides-padding);
     background-color: var(--background-color1);
     display: flex;
     justify-content: space-between;
@@ -26,33 +27,120 @@
     vertical-align: bottom;
 }
 
-/* Navigations */
-.navbar nav ul {
+.navigations ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 0.5rem;
 }
 
-.navbar nav li a {
+.navigations li a {
     display: block;
     font-weight: 500;
     color: inherit;
     text-decoration: none;
-    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     transition: background 0.2s,
         translate 0.3s;
 }
 
 @media (hover: hover) {
-    .navbar nav li a:hover {
+    .navigations li a:hover {
         background-color: var(--background-color2);
     }
 }
 
-.navbar nav li a:active {
+.navigations li a:active {
     background-color: var(--background-color2);
     translate: 0 0.5rem;
+}
+
+.navbar .navigations ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navbar .navigations li a {
+    padding: 0.5rem 1rem;
+}
+
+/* Open menu button */
+.navbar>button {
+    display: none;
+}
+
+.menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--modal-barrier-color);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* 
+When menu is ready to open, .is_menu class will be 
+appedend which animates (transition) .menu_overlay 
+from opacity of 0 to 1
+*/
+.is_menu .menu_overlay {
+    opacity: 1;
+}
+
+.menu_content {
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    z-index: 11;
+    width: 18rem;
+    height: 100vh;
+    max-width: 100vw;
+    background-color: var(--background-color1);
+    transition: all 0.3s;
+}
+
+/* 
+When menu is ready to open, .is_menu class will be 
+appedend which animates (transition) .menu_content 
+from right (right: -20rem;) to left (right: 0;)
+*/
+.is_menu .menu_content {
+    right: 0;
+}
+
+/* Menu Header */
+.menu_content>section {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+}
+
+/* Close menu button */
+.menu_content>section button {
+    margin-left: auto;
+    margin-right: var(--navbar-vert-sides-padding);
+}
+
+.menu_content .navigations ul {
+    padding: 0 var(--navbar-vert-sides-padding) 1rem;
+}
+
+.menu_content .navigations li a {
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Hide navbar navigations */
+    .navbar>nav {
+        display: none;
+    }
+
+    /* Show icon button to open menu */
+    .navbar>button {
+        display: block;
+    }
 }
