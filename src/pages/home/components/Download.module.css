@@ -1,0 +1,11 @@
+.download {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.download h2 {
+    color: var(--tertiary-color);
+}

@@ -1,0 +1,28 @@
+.download_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.download_btns button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.download_btns :where(a, button) {
+    width: 8rem;
+    aspect-ratio: 45/13;
+    border-radius: 0.5rem;
+    background-color: var(--grey2);
+    transition: scale 0.3s;
+}
+
+.download_btns :where(a, button):active {
+    scale: 0.95;
+}
+
+.download_btns :where(a, button) img {
+    width: 100%;
+    vertical-align: bottom;
+}

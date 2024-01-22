@@ -1,7 +1,7 @@
 .header {
     max-width: 1280px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0;
 }
 
 .header>div {
@@ -27,32 +27,6 @@
     text-transform: capitalize;
     max-width: 720px;
     margin-top: 0.5rem;
-}
-
-.download_btns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.download_btns button {
-    border: none;
-    padding: 0;
-    width: 8rem;
-    aspect-ratio: 45/13;
-    border-radius: 0.5rem;
-    background-color: var(--grey2);
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.download_btns button:active {
-    scale: 0.95;
-}
-
-.download_btns button img {
-    width: 100%;
-    vertical-align: bottom;
 }
 
 @media screen and (max-width: 1080px) {
