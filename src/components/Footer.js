@@ -1,0 +1,27 @@
+import styles from './Footer.module.css'
+import { Link } from 'react-router-dom'
+
+export default function Footer() {
+    const scrollToTop = () => window.scrollTo(0, 0)
+    const currentDate = new Date()
+
+    return (
+        <div className={styles.footer}>
+            <p>
+                &copy; {currentDate.getFullYear()} Student Calendar
+            </p>
+            <ul>
+                <li>
+                    <Link to='/terms' onClick={scrollToTop}>
+                        Terms
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/privacy' onClick={scrollToTop}>
+                        Privacy
+                    </Link>
+                </li>
+            </ul>
+        </div>
+    )
+}

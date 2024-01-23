@@ -16,7 +16,7 @@
     height: var(--navbar-height);
     padding: 0 var(--navbar-vert-sides-padding);
     background: linear-gradient(180deg,
-            var(--background-color1) 25%,
+            var(--background-color1) 0%,
             var(--background-color1-a75) 100%);
     display: flex;
     justify-content: space-between;
