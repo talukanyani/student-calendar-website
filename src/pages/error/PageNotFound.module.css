@@ -1,0 +1,23 @@
+.page_not_found {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.page_not_found :where(h1, h2, p) {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.page_not_found h1 {
+    font-size: 8rem;
+}
+
+.page_not_found h2 {
+    font-size: 2rem;
+}
+
+.page_not_found button {
+    display: flex;
+    margin: auto;
+}
