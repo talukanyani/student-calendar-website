@@ -1,28 +1,13 @@
 import styles from './Navbar.module.css'
-import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
+import useHandlePortal from '../hooks/useHandlePortal';
 import logo from '../assets/images/logo.svg'
 import menu_icon from '../assets/icons/menu.svg'
 import close_icon from '../assets/icons/close.svg'
 
 export default function Navbar() {
-    const [isMenuInsertedToDOM, setIsMenuInsertedToDOM] = useState(false)
-    const [isMenuVisibleToScreen, setIsMenuVisibleToScreen] = useState(false)
-
-    const openMenu = () => {
-        setIsMenuInsertedToDOM(true)
-        setTimeout(() => {
-            setIsMenuVisibleToScreen(true)
-        }, 50);
-    }
-
-    const closeMenu = () => {
-        setIsMenuVisibleToScreen(false)
-        setTimeout(() => {
-            setIsMenuInsertedToDOM(false)
-        }, 1000);
-    }
+    const [isPortal, isMenu, openMenu, closeMenu] = useHandlePortal()
 
     return (
         <>
@@ -41,8 +26,8 @@ export default function Navbar() {
                     <img src={menu_icon} alt='Open menu icon' />
                 </button>
             </div>
-            {isMenuInsertedToDOM && createPortal(
-                <Menu isOpen={isMenuVisibleToScreen} close={closeMenu} />,
+            {isPortal && createPortal(
+                <Menu isOpen={isMenu} close={closeMenu} />,
                 document.body,
             )}
         </>

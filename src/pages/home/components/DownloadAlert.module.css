@@ -1,0 +1,12 @@
+.download_alert h1 {
+    margin: 0;
+}
+
+.download_alert p {
+    margin: 1.75rem 0;
+}
+
+.download_alert button {
+    display: flex;
+    margin-left: auto;
+}

@@ -81,11 +81,48 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .small_heading {
   font-size: 1.1rem;
   font-weight: normal;
   text-transform: capitalize;
   margin: 0;
+}
+
+.primary_btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: var(--background-color2);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: scale 0.3s;
+}
+
+@media (hover: hover) {
+  .primary_btn:hover {
+    outline: 0.15rem solid var(--primary-color);
+    outline-offset: 0.15rem;
+  }
+}
+
+.primary_btn:active {
+  scale: 0.95;
+}
+
+.primary_btn:disabled {
+  background-color: var(--primary-container-color);
 }
 
 .icon_btn {
