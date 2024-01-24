@@ -6,7 +6,7 @@ export default function Footer() {
     const currentDate = new Date()
 
     return (
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
             <p>
                 &copy; {currentDate.getFullYear()} Student Calendar
             </p>
@@ -22,6 +22,6 @@ export default function Footer() {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </footer>
     )
 }

@@ -13,9 +13,11 @@ export default function HomePage() {
     return (
         <>
             <Navbar />
-            <Header />
-            <Features />
-            <Download />
+            <main>
+                <Header />
+                <Features />
+                <Download />
+            </main>
             <Footer />
         </>
     )

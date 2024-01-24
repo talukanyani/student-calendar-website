@@ -1,0 +1,14 @@
+.account_deletion {
+    max-width: 720px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.account_deletion h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.account_deletion h2 {
+    margin-top: 3rem;
+}
