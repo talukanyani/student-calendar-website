@@ -1,0 +1,17 @@
+.legal {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.legal :where(h1, h2, h3, b, dt) {
+    font-weight: 500;
+}
+
+.legal h1 {
+    margin-top: 0;
+}
+
+.legal h2 {
+    margin: 2rem 0 1rem;
+}
