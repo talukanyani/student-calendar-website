@@ -8,9 +8,9 @@ export default function DownloadAlert({ isOpen, close }) {
             <div className={styles.download_alert}>
                 <h1>Download For iOS</h1>
                 <p>
-                    For now, Student Calendar is only available on
-                    {' '}<a href={PLAY_STORE_LINK}>Play Store</a>.
-                    It will be available on App Store soon.
+                    For now, Student Calendar is only available for Android
+                    on <a href={PLAY_STORE_LINK}>Play Store</a>.
+                    It will be available for iOS on App Store soon.
                 </p>
                 <button className='primary_btn' onClick={close}>
                     OK

@@ -8,7 +8,8 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <p>
-                &copy; {currentDate.getFullYear()} Student Calendar
+                &copy; Student Calendar (Pty) Ltd
+                {' ' + currentDate.getFullYear()}
             </p>
             <ul>
                 <li>

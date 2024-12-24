@@ -118,7 +118,7 @@ a:hover {
 }
 
 .primary_btn:active {
-  scale: 0.95;
+  scale: 0.9;
 }
 
 .primary_btn:disabled {
@@ -147,4 +147,5 @@ a:hover {
 
 .icon_btn:active {
   background-color: var(--background-color2);
+  scale: 0.9;
 }

@@ -19,7 +19,7 @@ export default function AccountDeletionPage() {
                 <p>
                     When you delete your account, your profile details
                     such as email and username will be deleted,
-                    your synced data such assessments and subjects will
+                    your synced data such assessments and plans will
                     be deleted.
                 </p>
                 <p>
@@ -31,18 +31,15 @@ export default function AccountDeletionPage() {
                 <p>You have to sign in with the account you want to delete.</p>
                 <ol>
                     <li>
-                        On small screen device, tap on <b>profile icon</b>
-                        {' '}at top right.
-                        On large screen device, tap on <b>settings icon</b>
+                        On small screen device, tap on <b>more icon</b>
+                        {' '}at top right, then tap settings.
+                        On large screen device, tap on <b>Settings</b>
                         {' '}at bottom left.
                     </li>
-                    <li>
-                        Tap on account settings, a tile with
-                        {' '}<b>profile icon, your name, and your email</b>.
-                    </li>
-                    <li>Tap <b>Delete Account</b>.</li>
-                    <li>Tap <b>Sign in again</b> button.</li>
-                    <li>After signing in again, tap <b>Delete</b> button.</li>
+                    <li>Tap on <b>Account</b>.</li>
+                    <li>Tap on <b>Delete Account</b>.</li>
+                    <li>Tap <b>Re Sign In</b> button.</li>
+                    <li>After re-signing in, tap <b>Delete</b> button.</li>
                 </ol>
 
             </main>

@@ -10,7 +10,7 @@ export default function Header() {
                 </h1>
                 <h2>
                     Stay Organised and on Track.
-                    Manage your Academic Assessments.
+                    Manage your School Work Effortlessly.
                 </h2>
                 <DownloadButtons />
             </div>

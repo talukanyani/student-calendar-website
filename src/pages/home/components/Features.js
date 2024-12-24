@@ -11,26 +11,25 @@ export default function Features() {
                 />
             </div>
             <div>
-                <h2 className='small_heading'>Efficient App</h2>
-                <h3>
-                    Developed to revolutionise the way students
-                    manage their academic assessments.
-                </h3>
+                <h2 className='small_heading'>Features</h2>
+                <h3>Your Ultimate Productivity Tool</h3>
                 <p>
                     Student Calendar simplifies the process of organising,
                     tracking, and prioritising academic tasks.
                 </p>
                 <ul>
                     <li>
-                        Seamlessly integrate your tests, project due dates,
-                        and other academic assessments in one place.
+                        Seamlessly integrate your assessments, plans,
+                        and other academic tasks in one place.
                     </li>
                     <li>
-                        Share your academic schedule with your class mates.
+                        Get reminders for your assessments and plans.
+                        Stay prepared.
                     </li>
                     <li>
-                        Visualise your academic schedule in table,
-                        list and calendar views.
+                        Visualise your schedule in a tables, countdowns,
+                        list, and calendar views.
+                        Stay ahead of your schedule.
                     </li>
                 </ul>
             </div>

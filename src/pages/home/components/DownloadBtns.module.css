@@ -19,7 +19,7 @@
 }
 
 .download_btns :where(a, button):active {
-    scale: 0.95;
+    scale: 0.9;
 }
 
 .download_btns :where(a, button) img {
